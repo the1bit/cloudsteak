@@ -25,7 +25,7 @@ pip install cloudsteak --upgrade
 (install without cache: pip install cloudsteak --no-cache-dir  )
 
 
-You can find the detailed documentation in https://github.com/the1bit/cloudsteak/blob/master/cloudsteak/docs/readme.md.
+You can find the detailed documentation in https://github.com/the1bit/cloudsteak.
 
 
 Please read the license related information.
