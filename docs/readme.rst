@@ -9,7 +9,7 @@ Requirements
 ------------
 
 * Linux OS or Windows OS
-* Python (2.7 or 3.4)
+* Python (2.7)
 
 It will install the folowing rprerequisites:
 * Azure-Cli 2.0
