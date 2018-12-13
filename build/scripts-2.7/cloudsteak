@@ -1,0 +1,30 @@
+#!S:\Python27\python.exe
+
+"""Example of program with many options using docopt.
+Usage:
+  cloudsteak [-hvqrf NAME] [--exclude=PATTERNS]
+                     [--select=ERRORS | --ignore=ERRORS] [--show-source]
+                     [--statistics] [--count] [--benchmark] PATH...
+  cloudsteak --version
+Arguments:
+  PATH  destination path
+Options:
+  -h --help            show this help message and exit
+  -v --version         show version and exit
+  --verbose            print status messages
+  -q --quiet           report only file names
+  -r --repeat          show all occurrences of the same error
+"""
+
+
+
+from docopt import docopt
+
+## Version of the current package
+from bin.version import __version__
+
+if __name__ == '__main__':
+    arguments = docopt(__doc__, version=__version__)
+    print(arguments)
+
+
