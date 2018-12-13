@@ -11,7 +11,8 @@ Requirements
 * Linux OS or Windows OS
 * Python (2.7)
 
-It will install the folowing rprerequisites:
+It will also install the following packages:
+
 * Azure-Cli 2.0
 * AWS-Cli
 * docopt
