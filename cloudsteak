@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-"""Example of program with many options using docopt.
+"""CloudSteak - Cloud Tools by the1bit
 Usage:
   cloudsteak --version
   cloudsteak aws --name NAME
@@ -23,7 +23,7 @@ Options:
 from docopt import docopt
 
 ## Version of the current package
-from bin.version import __version__
+from modules.version import __version__
 
 if __name__ == '__main__':
   name = docopt(__doc__)["NAME"]

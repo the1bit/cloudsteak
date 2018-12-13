@@ -22,7 +22,7 @@ with open(path.join(here, 'docs/LICENSE.txt'), encoding='utf-8') as l:
 
 
 ## Version of the current package
-from bin.version import __version__
+from modules.version import __version__
 
 sys.stdout.write("cloudsteak: " + __version__ + '\n')
 
@@ -62,6 +62,6 @@ setup(name='cloudsteak',
 		'Programming Language :: Python :: 2',
 		'Programming Language :: Python :: 2.7'
 	],
-	  packages=['bin'],
+	  packages=['modules'],
 	  license='MIT',
 	  zip_safe=True)
