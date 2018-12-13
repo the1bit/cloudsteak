@@ -2,10 +2,11 @@
 
 """Example of program with many options using docopt.
 Usage:
-  cloudsteak [-hvqrf NAME] [--exclude=PATTERNS]
-                     [--select=ERRORS | --ignore=ERRORS] [--show-source]
-                     [--statistics] [--count] [--benchmark] PATH...
   cloudsteak --version
+  cloudsteak aws --name NAME
+  cloudsteak aws -n NAME
+  cloudsteak azure --name NAME
+  cloudsteak azure -n NAME
 Arguments:
   PATH  destination path
 Options:
@@ -14,6 +15,7 @@ Options:
   --verbose            print status messages
   -q --quiet           report only file names
   -r --repeat          show all occurrences of the same error
+  -n --name            show name and exit
 """
 
 
@@ -24,7 +26,13 @@ from docopt import docopt
 from bin.version import __version__
 
 if __name__ == '__main__':
-    arguments = docopt(__doc__, version=__version__)
-    print(arguments)
+  name = docopt(__doc__)["NAME"]
+   
+  if docopt(__doc__)["--name"] and docopt(__doc__)["aws"]:
+    print("AWS name: {0}".format(name))
 
+  if docopt(__doc__)["--name"] and docopt(__doc__)["azure"]:
+    print("Azure name: {0}".format(name))
 
+  arguments = docopt(__doc__, version=__version__)
+  print(arguments)
