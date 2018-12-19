@@ -2,7 +2,7 @@
 CloudSteak - Cloud Tools by The1bit
 --------------------------------------
 
-Change log - version 0.0.0.5
+Change log - version 0.0.0.6
 -----------------------------
 
 Requirements
