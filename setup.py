@@ -48,11 +48,10 @@ setup(name='cloudsteak',
 		#   4 - Beta
 		#   5 - Production/Stable
 		'Development Status :: 3 - Alpha',
-
+		'Operating System :: Microsoft :: Windows',
 		# Indicate who your project is intended for
 		'Intended Audience :: Developers',
 		'Topic :: Software Development :: Build Tools',
-		'Operating System :: POSIX :: Linux',
 
 		# Pick your license as you wish
 		'License :: OSI Approved :: MIT License',
