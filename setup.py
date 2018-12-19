@@ -49,6 +49,7 @@ setup(name='cloudsteak',
 		#   5 - Production/Stable
 		'Development Status :: 3 - Alpha',
 		'Operating System :: Microsoft :: Windows',
+		'Operating System :: POSIX :: Linux',
 		# Indicate who your project is intended for
 		'Intended Audience :: Developers',
 		'Topic :: Software Development :: Build Tools',
